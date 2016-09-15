@@ -1,5 +1,5 @@
 # Web Fundamentals
-This repository contains the slides for the [Web Fundamentals](http://rubenverborgh.github.io/WebFundamentals/) module
+This repository contains the slides for the [Big Data in Dairy Research](http://bovi-analytics.github.io/BigDataForDairyResearch/) module
 of the Ghent University course [Internet Technology](http://studiegids.ugent.be/2015/EN/studiefiches/C001894.pdf).
 <br>
 [View the slides online.](http://rubenverborgh.github.io/WebFundamentals/)
