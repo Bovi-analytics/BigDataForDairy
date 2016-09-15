@@ -2,14 +2,14 @@
 This repository contains the slides for the [Big Data in Dairy Research](http://bovi-analytics.github.io/BigDataForDairyResearch/) module
 of the Ghent University course [Internet Technology](http://studiegids.ugent.be/2015/EN/studiefiches/C001894.pdf).
 <br>
-[View the slides online.](http://rubenverborgh.github.io/WebFundamentals/)
+[View the slides online.](https://bovi-analytics.github.io/BigDataForDairyResearch/)
 
 ## Questions, feedback and suggestions welcome!
-- Do you have a **question** on one of topics? [Please create an issue.](https://github.com/RubenVerborgh/WebFundamentals/issues/new)
-- Do you have **feedback** on contents or form? [Please create an issue.](https://github.com/RubenVerborgh/WebFundamentals/issues/new)
-- Do you have a **suggestion** to improve the slides? [Please create a pull request.](https://github.com/RubenVerborgh/WebFundamentals/pulls)
+- Do you have a **question** on one of topics? [Please create an issue.](https://github.com/Bovi-analytics/BigDataForDairyResearch/issues/new)
+- Do you have **feedback** on contents or form? [Please create an issue.](https://github.com/Bovi-analytics/BigDataForDairyResearch/issues/new)
+- Do you have a **suggestion** to improve the slides? [Please create a pull request.](https://github.com/Bovi-analytics/BigDataForDairyResearch/pulls)
 
-Please read and accept the [contributor agreement](https://github.com/RubenVerborgh/WebFundamentals/blob/gh-pages/CONTRIBUTING.md) before contributing.
+Please read and accept the [contributor agreement](https://github.com/Bovi-analytics/BigDataForDairyResearch/blob/gh-pages/CONTRIBUTING.md) before contributing.
 
 ## Finding your way around
 This repository contains:
