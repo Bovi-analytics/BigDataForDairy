@@ -1,0 +1,33 @@
+{
+  "index": "vw-reproduction",
+  "query": {
+    "query_string": {
+      "query": "reprotype:1 AND parity:0",
+      "analyze_wildcard": true
+    }
+  },
+  "filter": []
+}
+
+{
+  "filter": [
+    {
+      "$state": {
+        "store": "appState"
+      },
+      "query": {
+        "query_string": {
+          "analyze_wildcard": true,
+          "query": "reprotype:1 AND parity:0"
+        }
+      },
+      "meta": {
+        "key": "query",
+        "value": "reprotype:1 AND parity:0",
+        "disabled": false,
+        "negate": false,
+        "alias": null
+      }
+    }
+  ]
+}
