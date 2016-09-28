@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Big Data in Dairy</title>
+
+	<meta name="description" content="A presenation on big data in dairy research">
+	<meta name="author" content="Miel Hostens">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+		<section>
+			<h1>Dairy Data Analytics</h1>
+			<h3>An Introduction to Big Data</h3>
+			<p>
+				<large>Created by <a target="_blank" href="http://www.bovi-analytics.com/index.php/miel-hostens/">Miel Hostens</large>
+			</p>
+		</section>
+		<!-- Example of nested vertical slides -->
+		<section>
+			<section>
+				<h1>Data science</h1>
+				<p>Is changing at an incredible speed</p>
+				<a class="navigate-down">
+					<img width="600" height="400" data-src="images/computer.jpg" alt="Computer">
+				</a>
+			</section>
+			<section>
+				<h2>It's more fun to compute</h2>
+				<br>
+				<ol>
+					<li><a target="_blank" href="https://en.wikipedia.org/wiki/Read-only_memory">ROM</a> = Read-Only-Memory</li>
+					<br>
+					<li><a target="_blank" href="https://en.wikipedia.org/wiki/Random-access_memory">RAM</a> = Random-Access-Memory</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Cost of HARDWARE</h2>
+				<img width="400" height="300" data-src="images/cost_of_hardware.png" alt="Cost of Hardware">
+				<p>Is changing at an incredible speed, 2 examples:</p>
+				<ol>
+						<li class="fragment"><a target="_blank" href="https://en.wikipedia.org/wiki/Raspberry_Pi">Raspberry Pi</a></li>
+						<li class="fragment"><a target="_blank" href="https://en.wikipedia.org/wiki/Arduino">Arduino</a></li>
+				</ol>
+			</section>
+			<section>
+				<h2>The future of hardware</h2>
+				<p>
+							<q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+							&ldquo;The observation that, over the history of computing hardware, the number of transistors in a dense integrated circuit has doubled approximately every 18 months.&rdquo;</q>
+				</p>
+				<p class="fragment"><a target="_blank" href="https://en.wikipedia.org/wiki/Gordon_Moore">Gordon Moore</a></p>
+			</section>
+			<section>
+				<h2>Moore's law</h2>
+				<img width="500" height="500" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Transistor_Count_and_Moore%27s_Law_-_2011.svg/800px-Transistor_Count_and_Moore%27s_Law_-_2011.svg.png" alt="Moore's Law">
+			</section>
+			<section>
+				<h2>Future of software languages</h2>
+				<p class="fragment">Community driven change every 3 years.</p>
+				<img width="800" height="400" data-src="images/languages.jpg"  alt="Moore's Law">
+			</section>
+			<section>
+				<h2>Future of software</h2>
+				<pre><code class="hljs" data-trim contenteditable>
+function which_language(age, skills ) {
+  if( age > 5, skill = 0 )
+	{randomselect(
+		R
+		SAS
+		JAVA/SCALA
+		PYTHON
+		SQL)
+	}
+}
+					</code></pre>
+				<p>Not easy to choose, <a target="_blank" href="http://www.kdnuggets.com/2014/08/four-main-languages-analytics-data-mining-data-science.html">trends</a> are changing
+				year to year. <br>
+					I changed 4 times this year.</p>
+			</section>
+			<section>
+				<h2>Future of software packages</h2>
+				<img width="800" height="400" data-src="http://www.bigdatapartnership.com/wp-content/uploads/2016/05/vendors2.png"  alt="Big Data landscape">
+				<h3 class="fragment">Community driven every ??? years</h3>
+				<p class="fragment">Extremely active <a target="_blank" href="https://www.apache.org/">Apache Software</a> community.</p>
+			</section>
+		</section>
+		<section>
+			<section>
+				<h1><a target="_blank" href="https://en.wikipedia.org/wiki/Big_data">What is Big Data?</a> </h1>
+				<q class="fragment">
+					"Big data is a broad term for data sets so large or complex that traditional data processing applications are inadequate. Challenges include analysis, capture, data curation, search, sharing, storage, transfer, visualization, and information privacy."
+				</q>
+			</section>
+			<section>
+				<img width="100%" height="100%" data-src="images/big-data.png"  alt="Big Data Characteristics">
+			</section>
+			<section>
+				<h1>Characteristics</h1>
+				<h3>of Big Data</h3>
+				<ul>
+					<li>Volume</li>
+					<li>Variety</li>
+					<li>Veracity</li>
+					<li>Validity</li>
+					<li>Volatility</li>
+					<li>Variety</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Volume</h2>
+				<ul>
+					<li> Full bovine genome ~ 3 Gb </li>
+					<br>
+					<li>Currently this can be stored in around 1 Gb for DNA per 1000 cows</li>
+					<br>
+					<li>5-10 Gb for RNA seq per cow	 </li>
+					<br>
+					<li> A result of ease of access to the internet, unstructured data (eg. free text and pictures)
+						has emerged and is believed to account for 85% of all data in the world.
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Veracity</h2>
+				<img width="75%" height="75%" data-src="images/veracity.jpg"  alt="Big Data Veracity" >
+				<ul>
+					<li> The rate at which data flows and changes into the dataset has exponentially increased, following a similar pattern to that of volume</li>
+					<li> New data is continuously flowing in during clinical trials instead of at the end of the trial ->  need for version control</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Variety in data sources</h2>
+				<ul>
+					<li> Structural database heterogeneity, syntax heterogeneity, implementation heterogeneity and semantic heterogeneity hold this Big Data to get properly utilized.</li>
+				</ul>
+				<img width="50%" height="50%" data-src="images/variety_data_sources.png"  alt="Big Data Variety" >
+			</section>
+			<section>
+				<h2>Variety in data dimensions</h2>
+				<img width="100%" height="100%" data-src="images/data_dimensions.jpg"  alt="Big Data Variety" >
+			</section>
+			<section>
+				<h2>Variety in people</h2>
+			</section>
+			<section>
+				<h2>Veracity</h2>
+				<p>refers to the biases, noise and abnormality in data.</p>
+				<img width="60%" height="60%" data-src="images/data_quality.png"  alt="Big Data Veracity" >
+				<p>Rarely seen in animal science to report data quality!</p>
+			</section>
+			<section>
+				<h1>Report data quality</h1>
+				<h4>I strongly advocate the reporting data quality in animal science!</h4>
+				<ul>
+					<li> Number of missing values</li>
+					<li> Number of outliers, approach to outliers</li>
+				</ul>
+				<br>
+				<br>
+				<p class="fragment">The fact that it is missing, or that it is an outlier is a new feature which can be analyzed!</p>
+			</section>
+			<section>
+				<h2>Volatility</h2>
+				<p>Refers to how long is data valid and how long should it be stored. In this world of real time data you need to determine at what point is data no longer relevant to the current analysis.</p>
+				<br>
+				<p class="fragment">Who pays for the bill to keep the data stored somewhere, after the end of a trial?</p>
+			</section>
+		</section>
+		<section>
+			<section id="Challenges">
+				<h1>Challenges</h1>
+				<p>for data driven projects</p>
+			</section>
+			<section>
+				<h2>Communication</h2>
+				<ul>
+					<li class="fragment"> My personal opinion on email
+						…it doesn’t work for data intensive projects</li>
+					<li class="fragment"> Skype chats work (One-on-one and group-chats)</li>
+				</ul>
+				<img class="fragment" width="20%" height="0%" href="https://slack.com/" data-src="https://a.slack-edge.com/0180/img/icons/app-256.png"  alt="Slack" >
+			</section>
+			<section>
+				<h2>Collaboration</h2>
+				<ul>
+					<li class="fragment"> Collaboration during iteration</li>
+					<li class="fragment"> Task management is logged, assigned and monitored</li>
+					<li class="fragment"> Weekly checks on to-do, doing, done</li>
+				</ul>
+				<img class="fragment" width="20%" height="0%" href="https://bovi-analytics.atlassian.net/secure/Dashboard.jspa" data-src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/JIRA_logo.svg/800px-JIRA_logo.svg.png"  alt="JIRA" >
+			</section>
+			<section>
+				<h2>Co-visualisation</h2>
+				<ul>
+					<li class="fragment"> Tableau, Qlik, and power bi offer great visualization possibilities</li>
+					<li class="fragment"> Open-viz to others as review?</li>
+				</ul>
+				<img class="fragment" width="20%" height="20%" href="https://public.tableau.com/profile/bovianalytics#!/" data-src="https://www.mmmooogle.com/content/images/thumbs/0000026_bovi-analytics_300.png"  alt="Tableau" >
+			</section>
+			<section>
+				<h2>Co-creation</h2>
+				<ul>
+					<li class="fragment"> Most recent data is always available for everyone without downloading latest file from ftp, email</li>
+					<li class="fragment"> Currently data is shared among parties using RESTfull, secure WEB-APIs</li>
+					<li class="fragment"> Coordinated set of components, connectors, and data elements within a distributed hypermedia system, where the focus is on component roles and a specific set of interactions between data elements rather than implementation details. </li>
+					<li class="fragment"> Data privacy can be assured</li>
+					<li class="fragment"> Documentation can be provided within the API <a target="_blank" href="http://swagger.io/">(Swagger)</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Cocoding</h2>
+				<ul>
+					<li class="fragment"> Statistical code base is shared using <a target="_blank" href="https://bitbucket.org/bovianalytics/">version control</a>, other contributors can merge share and document models within the GplusE group</li>
+					<li class="fragment"> Documentation has been put in <a target="_blank" href="https://bovi-analytics.atlassian.net/wiki/spaces/GPLUSE/overview">wiki</a> pages, which makes referencing to ongoing JIRA discussions possible.</li>
+					<li class="fragment"> If needed one can make new task from documentation, back and forth.</li>
+				</ul>
+				<img class="fragment" width="20%" height="20%" href="https://bovi-analytics.atlassian.net/wiki/spaces/GPLUSE/overview" data-src="https://www.atlassian.com/docroot/wac/resources/wac/img/social-icons/confluence_logo.jpg"  alt="Confluence" >
+			</section>
+
+		</section>
+		<section>
+		<h2>The future</h2>
+		<img width="100%" height="100%" data-src="images/data_pipeline.jpg"  alt="Pipeline" >
+		<a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/?imm_mid=0d76b4&cmp=em-data-na-na-newsltr_20150826/">Introduction to Machine Learning</a>
+	</section>
+	</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+</body>
+</html>

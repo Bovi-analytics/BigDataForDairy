@@ -6,6 +6,10 @@ This repository contains slides for multiple aspects of the [Master of Veterinar
 
 ## Master in Veterinary Medicine
 
+### Dairy Herd analytics
+
+Interpretation of production, reproduction records
+
 ### Nutritional management
 Information and tools to assist in managing dairy nutrition, including resources on forages, pasture, heifers, and calves.
 ### Transition Management
