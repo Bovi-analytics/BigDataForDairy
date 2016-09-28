@@ -1,6 +1,6 @@
-# Web Fundamentals
+# Big Data in Dairy Research
 This repository contains the slides for the [Big Data in Dairy Research](http://bovi-analytics.github.io/BigDataForDairyResearch/) module
-of the Ghent University course [Internet Technology](http://studiegids.ugent.be/2015/EN/studiefiches/C001894.pdf).
+of the Ghent University course [8th Basic Summer Course on Veterinary Epidemiology](http://www.rohh.ugent.be/vetepisummercourse/home/).
 <br>
 [View the slides online.](https://bovi-analytics.github.io/BigDataForDairyResearch/)
 
