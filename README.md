@@ -6,11 +6,17 @@ This repository contains slides for multiple aspects of the [Master of Veterinar
 
 ## Master in Veterinary Medicine
 
+### Nutritional management
+Information and tools to assist in managing dairy nutrition, including resources on forages, pasture, heifers, and calves.
+### Transition Management
+The transition feeding phase can be defined by several different time periods. In this paper, the transition time period includes the close up dry cow (three weeks before calving) through the fresh cow time period (two weeks after calving). A successful feeding system and strategy delivers the needed nutrients to each cow to meet her requirements. 
+### Reproduction and Genetics
+Topics covered include heat detection, artificial insemination (AI), breeding program strategies, management aids, infertility, calving management, dairy genetics, and economic analysis.
 ## Extension Work
 
 ### Big Data in Dairy Research
-This repository contains the slides for the [Big Data in Dairy Research](http://bovi-analytics.github.io/BigDataForDairyResearch/) session
--  In the Ghent University course [8th Basic Summer Course on Veterinary Epidemiology](http://www.rohh.ugent.be/vetepisummercourse/home/).
+This repository contains the slides for the [Big Data in Dairy Research](https://bovi-analytics.github.io/BigDataForDairyResearch/big-data/#/) session
+-  Ghent University course [8th Basic Summer Course on Veterinary Epidemiology](http://www.rohh.ugent.be/vetepisummercourse/home/).
 <br>
 [View the slides online.](https://bovi-analytics.github.io/BigDataForDairyResearch/)
 
