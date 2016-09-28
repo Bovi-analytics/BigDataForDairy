@@ -1,6 +1,9 @@
 # Department of Reproduction and Herd Health
 
 The mission of our department is to provide excellent education, scientific research and scientific and clinical services in the field of reproduction and obstetrics, herd health, veterinary epidemiology, veterinary legislation and practice management
+
+This repository contains slides for multiple aspects of the [Master of Veterinary Medicine in Veterinary Medicine](http://studiegids.ugent.be/2016/EN/FACULTY/G/MABA/GMDIERHK/GMDIERHK.html)  with a focus on [Ruminant Herd Health Medicine](http://studiegids.ugent.be/2016/EN/studiefiches/G000771.pdf) 
+
 ##
 This repository contains the slides for the [Big Data in Dairy Research](http://bovi-analytics.github.io/BigDataForDairyResearch/) session
 -  In the Ghent University course [8th Basic Summer Course on Veterinary Epidemiology](http://www.rohh.ugent.be/vetepisummercourse/home/).
