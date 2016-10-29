@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Big Data in Dairy</title>
+	<title>Dairy Data Analytics</title>
 
-	<meta name="description" content="A presenation on big data in dairy research">
+	<meta name="description" content="A presenation on data analysis in dairy reproduction">
 	<meta name="author" content="Miel Hostens">
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -37,23 +37,26 @@
 <body>
 
 <div class="reveal">
-
 	<!-- Any section element inside of this container is displayed as a slide -->
 	<div class="slides">
 		<section>
 			<h1>Dairy Data Analytics</h1>
-			<h3>An Introduction to Big Data</h3>
-			<p>
-				<large>Created by <a target="_blank" href="http://www.bovi-analytics.com/index.php/miel-hostens/">Miel Hostens</large>
-			</p>
-		</section>
-		<!-- Example of nested vertical slides -->
+			<h3><small>Interpretation and visualization of data in dairy herds</small></h3>
+            <p><a target="_blank" href="http://www.bovi-analytics.com/index.php/miel-hostens/">Miel Hostens</a>,
+                <a target="_blank" href="http://www.bovi-analytics.com/index.php/kristof-hermans/">Kristof Hermans</a>,
+                <a target="_blank" href="http://users.ugent.be/~wwaegemn/">Willem Waegeman</a>, Sander Moerman,
+                <a target="_blank" href="https://biblio.ugent.be/person/802000795436">Jenne De Koster</a>,
+                <a target="_blank" href="https://biblio.ugent.be/person/802000802308">Mieke Van Eetvelde</a>,
+                <a target="_blank" href="https://biblio.ugent.be/person/801000492434">Bonny Van Ranst</a>
+                and <a target="_blank" href="https://biblio.ugent.be/person/801000853859">Geert Opsomer</a>
+            </p>
+        </section>
 		<section>
 			<section>
 				<h1>Data science</h1>
 				<p>Is changing at an incredible speed</p>
 				<a class="navigate-down">
-					<img width="600" height="400" data-src="images/computer.jpg" alt="Computer">
+					<img width="600" height="400" src="images/computer.jpg" alt="Computer">
 				</a>
 			</section>
 			<section>
@@ -67,7 +70,7 @@
 			</section>
 			<section>
 				<h2>Cost of HARDWARE</h2>
-				<img width="400" height="300" data-src="images/cost_of_hardware.png" alt="Cost of Hardware">
+				<img width="400" height="300" src="images/cost_of_hardware.png" alt="Cost of Hardware">
 				<p>Is changing at an incredible speed, 2 examples:</p>
 				<ol>
 						<li class="fragment"><a target="_blank" href="https://en.wikipedia.org/wiki/Raspberry_Pi">Raspberry Pi</a></li>
@@ -84,12 +87,12 @@
 			</section>
 			<section>
 				<h2>Moore's law</h2>
-				<img width="500" height="500" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Transistor_Count_and_Moore%27s_Law_-_2011.svg/800px-Transistor_Count_and_Moore%27s_Law_-_2011.svg.png" alt="Moore's Law">
+				<img width="500" height="500" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Transistor_Count_and_Moore%27s_Law_-_2011.svg/800px-Transistor_Count_and_Moore%27s_Law_-_2011.svg.png" alt="Moore's Law">
 			</section>
 			<section>
 				<h2>Future of software languages</h2>
 				<p class="fragment">Community driven change every 3 years.</p>
-				<img width="800" height="400" data-src="images/languages.jpg"  alt="Moore's Law">
+				<img width="800" height="400" src="images/languages.jpg"  alt="Moore's Law">
 			</section>
 			<section>
 				<h2>Future of software</h2>
@@ -111,20 +114,21 @@ function which_language(age, skills ) {
 			</section>
 			<section>
 				<h2>Future of software packages</h2>
-				<img width="800" height="400" data-src="http://www.bigdatapartnership.com/wp-content/uploads/2016/05/vendors2.png"  alt="Big Data landscape">
+				<img width="800" height="400" src="http://www.bigdatapartnership.com/wp-content/uploads/2016/05/vendors2.png"  alt="Big Data landscape">
 				<h3 class="fragment">Community driven every ??? years</h3>
 				<p class="fragment">Extremely active <a target="_blank" href="https://www.apache.org/">Apache Software</a> community.</p>
 			</section>
 		</section>
 		<section>
 			<section>
-				<h1><a target="_blank" href="https://en.wikipedia.org/wiki/Big_data">What is Big Data?</a> </h1>
+				<h1>What is the challenge?</h1>
 				<q class="fragment">
-					"Big data is a broad term for data sets so large or complex that traditional data processing applications are inadequate. Challenges include analysis, capture, data curation, search, sharing, storage, transfer, visualization, and information privacy."
+					"The human ability to gather data has outpaced the speed of data analysis
+                    <a target="_blank" href="https://www.animalsciencepublications.org/publications/jas/articles/90/3/723">(Cole et al.,2012)</a>"
 				</q>
 			</section>
 			<section>
-				<img width="100%" height="100%" data-src="images/big-data.png"  alt="Big Data Characteristics">
+				<img width="100%" height="100%" src="images/big-data.png"  alt="Big Data Characteristics">
 			</section>
 			<section>
 				<h1>Characteristics</h1>
@@ -154,7 +158,7 @@ function which_language(age, skills ) {
 			</section>
 			<section>
 				<h2>Veracity</h2>
-				<img width="75%" height="75%" data-src="images/veracity.jpg"  alt="Big Data Veracity" >
+				<img width="75%" height="75%" src="images/veracity.jpg"  alt="Big Data Veracity" >
 				<ul>
 					<li> The rate at which data flows and changes into the dataset has exponentially increased, following a similar pattern to that of volume</li>
 					<li> New data is continuously flowing in during clinical trials instead of at the end of the trial ->  need for version control</li>
@@ -165,11 +169,11 @@ function which_language(age, skills ) {
 				<ul>
 					<li> Structural database heterogeneity, syntax heterogeneity, implementation heterogeneity and semantic heterogeneity hold this Big Data to get properly utilized.</li>
 				</ul>
-				<img width="50%" height="50%" data-src="images/variety_data_sources.png"  alt="Big Data Variety" >
+				<img width="50%" height="50%" src="images/variety_data_sources.png"  alt="Big Data Variety" >
 			</section>
 			<section>
 				<h2>Variety in data dimensions</h2>
-				<img width="100%" height="100%" data-src="images/data_dimensions.jpg"  alt="Big Data Variety" >
+				<img width="100%" height="100%" src="images/data_dimensions.jpg"  alt="Big Data Variety" >
 			</section>
 			<section>
 				<h2>Variety in people</h2>
@@ -177,7 +181,7 @@ function which_language(age, skills ) {
 			<section>
 				<h2>Veracity</h2>
 				<p>refers to the biases, noise and abnormality in data.</p>
-				<img width="60%" height="60%" data-src="images/data_quality.png"  alt="Big Data Veracity" >
+				<img width="60%" height="60%" src="images/data_quality.png"  alt="Big Data Veracity" >
 				<p>Rarely seen in animal science to report data quality!</p>
 			</section>
 			<section>
@@ -199,64 +203,338 @@ function which_language(age, skills ) {
 			</section>
 		</section>
 		<section>
-			<section id="Challenges">
-				<h1>Challenges</h1>
-				<p>for data driven projects</p>
+			<section id="Solutions">
+				<h1>Solutions</h1>
+				<h2>for data consumers</h2>
+                <ol>
+                    <li class="fragment">Aggregation into KPI</li>
+                    <br>
+                    <li class="fragment">Visualization</li>
+                </ol>
 			</section>
-			<section>
-				<h2>Communication</h2>
-				<ul>
-					<li class="fragment"> My personal opinion on email
-						…it doesn’t work for data intensive projects</li>
-					<li class="fragment"> Skype chats work (One-on-one and group-chats)</li>
-				</ul>
-				<img class="fragment" width="20%" height="0%" href="https://slack.com/" data-src="https://a.slack-edge.com/0180/img/icons/app-256.png"  alt="Slack" >
-			</section>
-			<section>
-				<h2>Collaboration</h2>
-				<ul>
-					<li class="fragment"> Collaboration during iteration</li>
-					<li class="fragment"> Task management is logged, assigned and monitored</li>
-					<li class="fragment"> Weekly checks on to-do, doing, done</li>
-				</ul>
-				<img class="fragment" width="20%" height="0%" href="https://bovi-analytics.atlassian.net/secure/Dashboard.jspa" data-src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/JIRA_logo.svg/800px-JIRA_logo.svg.png"  alt="JIRA" >
-			</section>
-			<section>
-				<h2>Co-visualisation</h2>
-				<ul>
-					<li class="fragment"> Tableau, Qlik, and power bi offer great visualization possibilities</li>
-					<li class="fragment"> Open-viz to others as review?</li>
-				</ul>
-				<img class="fragment" width="20%" height="20%" href="https://public.tableau.com/profile/bovianalytics#!/" data-src="https://www.mmmooogle.com/content/images/thumbs/0000026_bovi-analytics_300.png"  alt="Tableau" >
-			</section>
-			<section>
-				<h2>Co-creation</h2>
-				<ul>
-					<li class="fragment"> Most recent data is always available for everyone without downloading latest file from ftp, email</li>
-					<li class="fragment"> Currently data is shared among parties using RESTfull, secure WEB-APIs</li>
-					<li class="fragment"> Coordinated set of components, connectors, and data elements within a distributed hypermedia system, where the focus is on component roles and a specific set of interactions between data elements rather than implementation details. </li>
-					<li class="fragment"> Data privacy can be assured</li>
-					<li class="fragment"> Documentation can be provided within the API <a target="_blank" href="http://swagger.io/">(Swagger)</a></li>
-				</ul>
-			</section>
-			<section>
-				<h2>Cocoding</h2>
-				<ul>
-					<li class="fragment"> Statistical code base is shared using <a target="_blank" href="https://bitbucket.org/bovianalytics/">version control</a>, other contributors can merge share and document models within the GplusE group</li>
-					<li class="fragment"> Documentation has been put in <a target="_blank" href="https://bovi-analytics.atlassian.net/wiki/spaces/GPLUSE/overview">wiki</a> pages, which makes referencing to ongoing JIRA discussions possible.</li>
-					<li class="fragment"> If needed one can make new task from documentation, back and forth.</li>
-				</ul>
-				<img class="fragment" width="20%" height="20%" href="https://bovi-analytics.atlassian.net/wiki/spaces/GPLUSE/overview" data-src="https://www.atlassian.com/docroot/wac/resources/wac/img/social-icons/confluence_logo.jpg"  alt="Confluence" >
-			</section>
-
 		</section>
 		<section>
-		<h2>The future</h2>
-		<img width="100%" height="100%" data-src="images/data_pipeline.jpg"  alt="Pipeline" >
-		<a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/?imm_mid=0d76b4&cmp=em-data-na-na-newsltr_20150826/">Introduction to Machine Learning</a>
-	</section>
+			<section>
+			<h1>Key Performance Indicators</h1>
+			<ul>
+					<li class="fragment">Simple aggregation such as averages, sum,...</li>
+                    <ul>
+                        <li class="fragment">Average days in milk</li>
+                        <li class="fragment">Average days open</li>
+                        <li class="fragment">Average days dry</li>
+                    </ul>
+					<li class="fragment">Complex computations</li>
+                    <ul>
+                        <li class="fragment">Transition cow index</li>
+                        <li class="fragment">Predicted 305d yield</li>
+                        <li class="fragment">Pregnancy rate/risk</li>
+                    </ul>
+                </ul>
+			</section>
+			<section>
+				<h2>Features of a KPI</h2>
+				<img width="100%" height="100%" src="images/data_dimensions.jpg"  alt="Big Data Variety" >
+			</section>
+			<section>
+				<h2>Time dimension</h2>
+                <p>Daily observations can be grouped...</p>
+                <p class="fragment">... into weeks ...</p>
+                <p class="fragment">... into 3-weekly cycles ...</p>
+                <p class="fragment">... into months ...</p>
+                <p class="fragment">... into quarters ...</p>
+                <p class="fragment">... into years ...</p>
+			</section>
+            <section>
+                <h2>Cross-sectional versus Cohort</h2>
+                <img width="35%" height="35%" src="images/CrossCohort.png"  alt="Cross Sectional vs Cohort" >
+                <p class="fragment">A cross-sectional analysis focusses on measures within a given time frame which might include observations on different animals</p>
+                <p class="fragment">A cohort analysis focusses on observations of the same animals over time</p>
+            </section>
+            <section>
+				<h2>Other dimensions</h2>
+				<ul>
+					<li class="fragment">At herd level</li>
+                    <ul class="fragment">
+                        <li>Spatial - region, country</li>
+                        <li>People - eg. inseminator, milker, ...</li>
+                    </ul>
+                    <br>
+                    <li class="fragment">At animal level</li>
+                    <ul class="fragment">
+                        <li>Age groups (eg. categories by months of age)</li>
+                        <li>Parity groups (eg. parity 1,2,3+ vs 1, 2-3, 4-5, 5+)</li>
+                        <li>Lactation stage (eg. categories by days in milk)</li>
+                        <li>Animal groups (eg. only cows from selected sire)</li>
+                        <li>People (eg. inseminator, milker, ...)</li>
+                    </ul>
+                </ul>
+			</section>
+			<section>
+				<h2>Group size</h2>
+				<p>Number of observations per group very important.</p>
+				<img width="60%" height="60%" src="images/sample_size.png"  alt="Sample Size" >
+			</section>
+		</section>
+		<section>
+			<section>
+				<h1>KPI Pitfalls</h1>
+				<img width="100%" height="100%" src="images/kpi.jpg"  alt="KPI" >
+			</section>
+			<section>
+				<blockquote>The average age at first calving was 23.5 months during the last year (n=52)</blockquote>
+				<br>
+				<p class="fragment">What can we conclude</p>
+				<p class="fragment">... about last years heifer reproduction?</p>
+			</section>
+			<section>
+				<h2>Variance</h2>
+				<img width="75%" height="75%" src="images/var_distributions.png"  alt="Variance" >
+				<p>Mean is the same in both groups, but interpretation is different. Who is routinely reporting variance...</p>
+			</section>
+			<section>
+				<h2>Variance & Skewness</h2>
+				<img width="80%" height="80%" src="images/skewed_distributions.png"  alt="Skewness" >
+				<p>Outliers will heavily influence the <a target="_blank" href="https://en.wikipedia.org/wiki/Mean">mean</a>, the <a target="_blank" href="hhttps://en.wikipedia.org/wiki/Median">median</a> will not be influenced but who is using it...</p>
+			</section>
+			<section>
+				<blockquote>The average historic calving interval was 400 days over the last year</blockquote>
+				<br>
+				<p class="fragment">What can we conclude</p>
+				<p class="fragment">... about current cow fertility?</p>
+			</section>
+			<section>
+				<h2>Lag</h2>
+				<img width="80%" height="80%" src="images/lag.png"  alt="Lag" >
+				<p>Lag is defined as the period between the moment an event occurs and the moment it is measured</p>
+			</section>
+			<section>
+				<blockquote>The average heat detection rate was 30 during the last month</blockquote>
+				<br>
+				<p class="fragment">What can we conclude</p>
+				<p class="fragment">... about the heat detection rate on this farm?</p>
+			</section>
+			<section>
+				<h2>Momentum</h2>
+				<img width="80%" height="80%" src="images/momentum.png"  alt="Momentum" >
+				<p>The responsiveness of averages to recent changes in performances</p>
+			</section>
+			<section>
+				<blockquote>The average historic calving interval was 400 days over the last year</blockquote>
+				<br>
+				<p class="fragment">What can we conclude</p>
+				<p class="fragment">... about the entire herd reproduction?</p>
+			</section>
+			<section>
+				<h2>Bias</h2>
+				<p>Bias can be caused by the inclusion or exclusion of specific individuals during the calculation of a KPI</p>
+				<ul class="fragment">
+					<li>First parity animals don't influence the historic calving interval</li>
+					<li>Cows that fail to become pregnant would heavily influence days open once pregnant</li>
+					<li>...</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Conclusion</h2>
+				<p>KPI contain useful information about farming processes and allows veterinarians to compare the current performances with the predefined objectives</p>
+				<p>However:</p>
+				<ul class="fragment">
+					<li>Need for deep domain knowledge</li>
+					<br>
+					<li>Basic knowledge of data analysis </li>
+				</ul>
+			</section>
+		</section>
+		<section>
+			<section>
+				<h1>Visualisation</h1>
+				<h3>A useful tool to avoid the misinterpretation of numbers</h3>
+			</section>
+			<section>
+				<h2>Example 1</h2>
+				<table>
+					<thead>
+					<tr>
+						<th>Item</th>
+						<th>Average</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Milk production</td>
+						<td>20 kg</td>
+					</tr>
+					<tr>
+						<td>Days in milk</td>
+						<td>50 days</td>
+					</tr>
+					</tbody>
+				</table>
+			</section>
+			<section>
+				<img width="100%" height="100%" src="images/Anscombe1.png" >
+			</section>
+			<section>
+				<img width="100%" height="100%" src="images/Anscombe2.png" >
+			</section>
+			<section>
+				<img width="100%" height="100%" src="images/Anscombe3.png" >
+			</section>
+			<section>
+				<img width="100%" height="100%" src="images/Anscombe4.png" >
+			</section>
+		</section>
+		<section>
+			<section>
+				<h1>Gestalt Principles</h1>
+				<p>Six major laws that play a major role in the unconscious interpretation of charts <a href="http://psycnet.apa.org/index.cfm?fa=search.displayRecord&uid=2007-10344-005">(Wertheimer, 1938)</a>.</p>
+			</section>
+			<section>
+				<img src="images/gestalt.jpg" alt="Gestalt example">
+			</section>
+			<section>
+				<p>The sixth and most important law is the law of “Prägnanz”. The brain loves simple elements instead of complicated shapes, therefore this law is also called the law of simplicity.</p>
+				<img src="images/pragnanz.png" alt="Law of Prägnanz">
+			</section>
+			<section>
+				<h3>Find the outlier</h3>
+			</section>
+			<section>
+				<img src="images/gestalt1.jpg" alt="Gestält 1">
+			</section>
+			<section>
+				<img src="images/gestalt2.png" alt="Gestält 2">
+			</section>
+			<section>
+				<img src="images/gestalt3.png" alt="Gestält 3">
+			</section>
+			<section>
+				<img src="images/gestalt4.png" alt="Gestält 4">
+			</section>
+			<section>
+				<img src="images/gestalt5.png" alt="Gestält 5">
+			</section>
+			<section>
+				<img src="images/gestalt6.png" alt="Gestält 6">
+			</section>
+			<section>
+				<h2>Order of Gestalt Laws</h2>
+				<p>Look for all pregnant animals</p>
+			</section>
+			<section>
+				<img src="images/gestalt7.png" alt="Combined">
+			</section>
+		</section>
+		<section>
+			<section>
+				<h1>Desceptive visualisation</h1>
+				<p>Misrepresentation of data in charts, leading towards</p>
+				<ul>
+					<li>Message reversal</li>
+					<li>Message exaggeration/understatement</li>
+				</ul>
+				<p><a href="http://dl.acm.org/citation.cfm?id=2702608">(Pandey et al., 2015)</a></p>
+			</section>
+			<section>
+				<h2>Example 1</h2>
+				<p>What is wrong</p>
+				<img src="images/message_exaggeration_wrong.png" alt="Message exaggeration">
+			</section>
+			<section>
+				<h2>Example 1</h2>
+				<p>Abusing proximity law</p>
+				<img src="images/message_exaggeration_right.png" alt="Message exaggeration">
+				<p>Correct graph on the right</p>
+			</section>
+			<section>
+				<h2>Example 2</h2>
+				<img src="images/message_removal_wrong.png" alt="Message removal">
+			</section>
+			<section>
+				<h2>Example 2</h2>
+				<img width="50%" height="50%" src="images/message_removal_right.png" alt="Message removal">
+				<p>Correct graph on top</p>
+			</section>
+			<section>
+				<h2>Example 3</h2>
+				<p>Which parity has to most animals on farm?</p>
+				<img width="40%" height="40%" src="images/message_inversion_wrong2.png" alt="Message removal">
+			</section>
+			<section>
+				<h2>Example 3</h2>
+				<p>Even worse</p>
+				<img width="50%" height="50%" src="images/message_inversion_wrong1.png" alt="Message removal">
+			</section>
+			<section>
+				<h2>Example 3</h2>
+				<p>Use area charts instead of pie charts</p>
+				<img width="75%" height="75%" src="images/message_inversion_right.png" alt="Message removal">
+			</section>
+		</section>
+		<section>
+			<section>
+				<h1>General guidelines</h1>
+			</section>
+			<section>
+				<h2>Data-ink concept</h2>
+				<ol>
+					<li class="fragment">above all, show the data</li>
+					<li class="fragment">maximize the data-ink ratio within reason</li>
+					<li class="fragment">erase non-data ink within reason</li>
+					<li class="fragment">erase redundant data-ink</li>
+					<li class="fragment">revise and edit</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Example 1</h2>
+				<img src="images/data_ink_data1.png" alt="Example Data-Ink 1">
+			</section>
+			<section>
+				<img src="images/data_ink_1.png" alt="Data-Ink 1">
+			</section>
+			<section>
+				<img src="images/data_ink_2.png" alt="Data-Ink 2">
+			</section>
+			<section>
+				<img src="images/data_ink_3.png" alt="Data-Ink 3">
+			</section>
+			<section>
+				<img src="images/data_ink_4.png" alt="Data-Ink 4">
+			</section>
+			<section>
+				<img src="images/data_ink_5.png" alt="Data-Ink 5">
+			</section>
+			<section>
+				<img src="images/data_ink_6.png" alt="Data-Ink 6">
+			</section>
+			<section>
+				<img src="images/data_ink_7.png" alt="Data-Ink 7">
+			</section>
+			<section>
+				<img src="images/data_ink_8.png" alt="Data-Ink 8">
+			</section>
+			<section>
+				<img src="images/data_ink_9.png" alt="Data-Ink 9">
+			</section>
+			<section>
+				<h1>Example 2</h1>
+			</section>
+			<section>
+				<img src="images/data_ink_data2.png" alt="Example Data Ink 2">
+			</section>
+			<section>
+				<img src="images/data_ink_10.png" alt="Data-Ink 10">
+			</section>
+			<section>
+				<img src="images/data_ink_11.png" alt="Data-Ink 11">
+			</section>
+			<section>
+				<img src="images/data_ink_12.png" alt="Data-Ink 12">
+			</section>
+			<section>
+				<img src="images/data_ink_13.png" alt="Data-Ink 13">
+			</section>
+		</section>
 	</div>
-
 </div>
 
 <script src="lib/js/head.min.js"></script>
